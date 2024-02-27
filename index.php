@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>My Form</h1>
-    <form action="./otherfile.php" method="GET"  >
+    <form action="./otherfile.php" method="POST"  >
         <textarea placeholder="write something" name="paragraph" id="" cols="30" rows="10"></textarea>
         <input type="text" name="word" placeholder="only one word here">
         <input type="submit">

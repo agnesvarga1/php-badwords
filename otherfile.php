@@ -1,6 +1,6 @@
 <?php  
-$paragraph = $_GET["paragraph"];
-$secretWrd = $_GET["word"];
+$paragraph = $_POST["paragraph"];
+$secretWrd = $_POST["word"];
 ?>
 
 <!DOCTYPE html>
@@ -10,10 +10,9 @@ $secretWrd = $_GET["word"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
 </head>
-<body>
-    <p><?php echo $paragraph?></p>
-    <p>The length of the paragraph above:<em> <?php echo strlen($paragraph) ?></em></p>
-    <span>Secret word: <?php echo str_replace($secretWrd,"***",$secretWrd) ?></span><br>
+<body>    
+    <span><?php echo str_replace($secretWrd,"***",$paragraph) ?></span>
+    <p>The length of the paragraph:<strong> <?php echo strlen($paragraph) ?></strong></p>
     <span>The lenth of the secret word:<strong> <?php echo strlen($secretWrd) ?></strong></span>
     
 </body>
